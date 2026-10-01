@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
         td, th{
             border: 1px solid black;
@@ -19,8 +27,18 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(63, 62, 62);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(63, 62, 62);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -45,10 +63,11 @@
                 TR, TD, TH
     -->
     <TABle>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populção</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populção</th>
             </tr>
         </thead>
         <tbody>
@@ -163,10 +182,47 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </TABle>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque sit, adipisci quasi, non nostrum saepe provident, similique recusandae minus modi consequuntur nisi inventore quos nulla labore ab repellendus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et, nobis dignissimos libero in est dolores quo culpa perspiciatis unde eius? Eveniet nostrum velit sapiente maxime id tenetur autem illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi suscipit quae quis debitis adipisci? Facilis ullam nesciunt soluta, cumque dolorum a, perferendis corporis autem deleniti ipsam veritatis dolorem ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni minus sint eligendi est cum ducimus aut facilis corporis perferendis, veritatis, minima placeat! Quaerat eaque magnam dolorum corrupti incidunt recusandae.
+    </p>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque sit, adipisci quasi, non nostrum saepe provident, similique recusandae minus modi consequuntur nisi inventore quos nulla labore ab repellendus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et, nobis dignissimos libero in est dolores quo culpa perspiciatis unde eius? Eveniet nostrum velit sapiente maxime id tenetur autem illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi suscipit quae quis debitis adipisci? Facilis ullam nesciunt soluta, cumque dolorum a, perferendis corporis autem deleniti ipsam veritatis dolorem ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni minus sint eligendi est cum ducimus aut facilis corporis perferendis, veritatis, minima placeat! Quaerat eaque magnam dolorum corrupti incidunt recusandae.
+    </p>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque sit, adipisci quasi, non nostrum saepe provident, similique recusandae minus modi consequuntur nisi inventore quos nulla labore ab repellendus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et, nobis dignissimos libero in est dolores quo culpa perspiciatis unde eius? Eveniet nostrum velit sapiente maxime id tenetur autem illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi suscipit quae quis debitis adipisci? Facilis ullam nesciunt soluta, cumque dolorum a, perferendis corporis autem deleniti ipsam veritatis dolorem ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni minus sint eligendi est cum ducimus aut facilis corporis perferendis, veritatis, minima placeat! Quaerat eaque magnam dolorum corrupti incidunt recusandae.
+    </p>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque sit, adipisci quasi, non nostrum saepe provident, similique recusandae minus modi consequuntur nisi inventore quos nulla labore ab repellendus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et, nobis dignissimos libero in est dolores quo culpa perspiciatis unde eius? Eveniet nostrum velit sapiente maxime id tenetur autem illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi suscipit quae quis debitis adipisci? Facilis ullam nesciunt soluta, cumque dolorum a, perferendis corporis autem deleniti ipsam veritatis dolorem ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni minus sint eligendi est cum ducimus aut facilis corporis perferendis, veritatis, minima placeat! Quaerat eaque magnam dolorum corrupti incidunt recusandae.
+    </p>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque sit, adipisci quasi, non nostrum saepe provident, similique recusandae minus modi consequuntur nisi inventore quos nulla labore ab repellendus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et, nobis dignissimos libero in est dolores quo culpa perspiciatis unde eius? Eveniet nostrum velit sapiente maxime id tenetur autem illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi suscipit quae quis debitis adipisci? Facilis ullam nesciunt soluta, cumque dolorum a, perferendis corporis autem deleniti ipsam veritatis dolorem ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni minus sint eligendi est cum ducimus aut facilis corporis perferendis, veritatis, minima placeat! Quaerat eaque magnam dolorum corrupti incidunt recusandae.
+    </p>
+
+    
 </body>
 </html>
